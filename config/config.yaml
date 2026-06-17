@@ -1,0 +1,25 @@
+Chillingham_raw:
+  ped_file: "/path/to/Chillingham/Chillingham.ped"
+  map_file: "/path/to/Chillingham/Chillingham.map"
+
+# WIDDE data needs to be filtered as we need to know the REF/ALT and this is not possible for fixed SNPs (MAF = 0)
+# Can be arbitrary but all SNP should be polymorphic.
+WIDDE_raw:
+  ped_file: "/path/to/WIDDE/cattle__UMD_3.1__632807variants__407individuals.ped"
+  map_file: "/path/to/WIDDE/cattle__UMD_3.1__632807variants__407individuals.map"
+
+KY_vcf_raw:  "/path/to/KY_ONLY.vcf.gz"
+
+illumina_annotation: "/path/to/Illumina_HD_manifest_final.txt"
+affymetrix_annotation: "/path/to/Axiom_GW_Bos_SNP_1.na35.annot.csv"
+output_dir: "/path/to/out_dir/"
+
+tools:
+  beagle: /path/to/software/beagle.27Feb25.75f.jar
+  gcta: /path/to/software/gcta-1.95.1/gcta64
+  mergevcf: /path/to/software/mergevcf.jar
+  conform_gt: /path/to/software/conform-gt.24May16.cee.jar
+
+ars_ref: '/path/to/GCA_002263795.4_ARS-UCD2.0_genomic.hard_masked_PAR_X_clean_scaffolds.fa'
+umd_ref: '/path/to/GCF_000003055.4_Bos_taurus_UMD_3.1_genomic_NOchr.fna'
+chain_file: '/path/to/bosTau6ToBosTau9.over.chain.gz'
